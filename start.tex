@@ -1,4 +1,4 @@
-\documentclass[12pt,fleqn]{article}
+\documentclass[10pt,fleqn]{article}
 \usepackage[textwidth=16cm, textheight=24cm]{geometry}
 
 \usepackage{graphicx}
@@ -14,6 +14,8 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{longtable}
 
 % Global vars
 \newcommand\formulaGap{9cm}
@@ -35,9 +37,8 @@
 		\hline
 	\end{tabularx}
 
-	\begin{enumerate}
-		\setcounter{enumi}{6}
-		\item 
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item [7.]
 		\begin{tabular}{C{.8\textwidth} R{.2\textwidth}}
 			\vbox{
 				\[
@@ -45,26 +46,31 @@
 				\]
 			} & ГХ2 (332)(12a)
 		\end{tabular}
-		\item 
+		\item [8.]
 		\begin{tabular}{C{\formulaGap} l r}
 			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi} sin^{v-1}xcosax \,dx = \frac{\pi cos\frac{a \pi}{2}}{2^{\nu-1}\nu B(\frac{v+a+1}{2},\frac{v-a+1}{2})}
+				\int_{0}^{\pi} sin^{v-1}xcosax \,dx = \frac{\pi cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{v+a+1}{2},\dfrac{v-a+1}{2}\right)}
 			\]}} \\
-			 & [$Re \nu > 0$] & Лб $\bigvee$ 121(68)и, Вт 337и
+			 & [$Re\enspace\nu > 0$] & Лб V 121(68)и, Вт 337и
 		\end{tabular}
-		\item 
+		\item [9.]
 		\begin{tabular}{C{\formulaGap} l r}
 			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi/2} sin^{v-1}xcosax \,dx = \frac{\pi}{2^{\nu}\nu B(\frac{v+a+1}{2},\frac{v-a+1}{2})}
+				\int_{0}^{\pi/2} sin^{v-1}xcosax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{v+a+1}{2},\dfrac{v-a+1}{2}\right)}
 			\]}} \\
-			 & [$Re v > 0$] & ГХ2 (332)(9c)
+			 & [$Re\enspace\nu > 0$] & ГХ2 (332)(9c)
 		\end{tabular}
-		\item
-		\begin{tabular}{C{\formulaGap} l R{5.38cm}}
+		\item [10.]
+		\begin{tabular}{C{\formulaGap} m{3cm} R{4cm}}
 			\vbox{\[
-				\int_{0}^{\pi/2} sin^{v-2}xcos\nu x \,dx = \frac{1}{\nu-1}sin\frac{\nu\pi}{2}
-			\]} & [$Re \nu > 0$] & ГХ2 (332)(9c)
+				\int_{0}^{\pi/2} sin^{\nu-2}xcos\nu x \,dx = \frac{1}{\nu-1}sin\frac{\nu\pi}{2}
+			\]} & [$Re\enspace\nu > 1$] & Х2 (332)(9c)
 		\end{tabular}
-		
-	\end{enumerate}
+		\item [11.]
+		\begin{tabular}{C{\formulaGap} m{3cm} R{4cm}}
+			\vbox{\[
+				\int_{0}^{\pi} sin^{\nu}xcos\nu x \,dx = \frac{\pi}{2^{\nu}}cos\frac{\nu\pi}{2}
+			\]} & [$Re\enspace\nu > -1$] & Лб V 121(70)и
+		\end{tabular}
+	\end{itemize}
 \end{document}

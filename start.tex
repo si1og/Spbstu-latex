@@ -17,6 +17,9 @@
 \usepackage{enumitem}
 \usepackage{longtable}
 
+% For russian controls
+\usepackage{amssymb}
+
 % Global vars
 \newcommand\formulaGap{9.3cm}
 \newcommand\reWidth{3cm}
@@ -25,12 +28,22 @@
 \title{Степени тригонометрических функций и линейных функций}
 \author{Илья Семенов}
 
+\pagenumbering{gobble}
+
+% Makes possible using vars
 \makeatletter
+
+% Document margins correction
+\sloppy
+
+% Adds new table column styles
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
 
 \setlength{\tabcolsep}{0pt}
 \renewcommand{\arraystretch}{1}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
 
 \begin{document}
 	\begin{tabularx}{\textwidth}{m{.1\textwidth} C{.8\textwidth} R{.1\textwidth}}
@@ -75,11 +88,15 @@
 			[$Re\enspace\nu > -1$] & Лб V 121(70)и
 		\end{tabular}
 		\item [12.]
-		\begin{tabular}{m{4cm} | m{10cm} | R{4cm}}
-			\[\int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx\]
-			&
-			\[= 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\]
-			& d \\
-		\end{tabular}
+			\begin{align*}
+				\int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx & = 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
+					2n \\
+					n-m
+				\end{pmatrix} \pi \tag*{[$n \geq m$]} \\
+				& = 0 \tag*{[$n < m$]} 
+			\end{align*}
+			\begin{flushright}
+				Би (40)(16), ГХ2 (332)(12b)
+			\end{flushright}
 	\end{itemize}
 \end{document}

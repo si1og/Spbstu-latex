@@ -1,5 +1,5 @@
-\documentclass[12pt,fleqn]{article}
-\usepackage[textwidth=16cm, textheight=24cm]{geometry}
+\documentclass[10pt,fleqn]{article}
+\usepackage[textwidth=18cm, textheight=24cm]{geometry}
 
 \usepackage{graphicx}
 
@@ -14,19 +14,38 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{longtable}
+
+% For russian controls
+\usepackage{amssymb}
 
 % Global vars
-\newcommand\formulaGap{9cm}
+\newcommand\formulaGap{9.3cm}
+\newcommand\reWidth{3cm}
+\newcommand\rightCeilWidth{3.7cm}
 
 \title{Степени тригонометрических функций и линейных функций}
 \author{Илья Семенов}
 
+\pagenumbering{gobble}
+
+% Makes possible using vars
 \makeatletter
+
+% Document margins correction
+\sloppy
+
+% Add new table column styles
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
 
 \setlength{\tabcolsep}{0pt}
 \renewcommand{\arraystretch}{1}
+
+% Replace eng >= <= to rus ones
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
 
 \begin{document}
 	\begin{tabularx}{\textwidth}{m{.1\textwidth} C{.8\textwidth} R{.1\textwidth}}
@@ -35,36 +54,35 @@
 		\hline
 	\end{tabularx}
 
-	\begin{enumerate}
-		\setcounter{enumi}{6}
-		\item 
-		\begin{tabular}{C{.8\textwidth} R{.2\textwidth}}
-			\vbox{
-				\[
-					\int_{0}^{\pi} xcos(2m+1)x \,dx = 0
-				\]
-			} & ГХ2 (332)(12a)
-		\end{tabular}
-		\item 
-		\begin{tabular}{C{\formulaGap} l r}
-			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi} sin^{v-1}xcosax \,dx = \frac{\pi cos\frac{a \pi}{2}}{2^{\nu-1}\nu B(\frac{v+a+1}{2},\frac{v-a+1}{2})}
-			\]}} \\
-			 & [$Re \nu > 0$] & Лб $\bigvee$ 121(68)и, Вт 337и
-		\end{tabular}
-		\item 
-		\begin{tabular}{C{\formulaGap} l r}
-			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi/2} sin^{v-1}xcosax \,dx = \frac{\pi}{2^{\nu}\nu B(\frac{v+a+1}{2},\frac{v-a+1}{2})}
-			\]}} \\
-			 & [$Re v > 0$] & ГХ2 (332)(9c)
-		\end{tabular}
-		\item
-		\begin{tabular}{C{\formulaGap} l R{5.38cm}}
-			\vbox{\[
-				\int_{0}^{\pi/2} sin^{v-2}xcos\nu x \,dx = \frac{1}{\nu-1}sin\frac{\nu\pi}{2}
-			\]} & [$Re \nu > 0$] & ГХ2 (332)(9c)
-		\end{tabular}
-		
-	\end{enumerate}
+	
+	\begin{align*}
+		7. \qquad \int_{0}^{\pi} x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
+	\end{align*}
+	
+	\begin{align*}
+		8. \qquad \int_{0}^{\pi} \sin^{v-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
+		& [Re\enspace\nu > 0] \tag*{Лб V 121(68)и, Вт 337и}
+	\end{align*}
+	\begin{align*}
+		9. \qquad \int_{0}^{\pi/2} \sin^{v-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
+		& [Re\enspace\nu > 0] \tag*{ГХ2 (332)(9c)}
+	\end{align*}
+	\begin{align*}
+		10. \qquad \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
+		& [Re\enspace\nu > 1] \hspace{1.3cm} \tag*{Х2 (332)(9c)}
+	\end{align*}
+	\begin{align*}
+		11. \qquad \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
+		\hspace{.3cm} & [Re\enspace\nu > -1] \tag*{Лб V 121(70)и}
+	\end{align*}
+	\begin{align*}
+		12. \qquad \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx & = 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
+			2n \\
+			n-m
+		\end{pmatrix} \pi & [n \geq m] \hspace{2.1cm} \\
+		& = 0 & [n < m] \hspace{2.1cm}
+	\end{align*}
+	\begin{flushright}
+		Би (40)(16), ГХ2 (332)(12b)
+	\end{flushright}
 \end{document}

@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1725732370.85286 "/home/si1og/Dev/latex-spbtu/start.tex" "start.pdf" "start" 1725732371.264 0
+["pdflatex"] 1725739539.48944 "/home/si1og/Dev/latex-spbtu/start.tex" "start.pdf" "start" 1725739540.334 0
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcbx1000.tfm" 1725636391.9071 3016 58decb41c34d8eccd5781d6a12bdb44f ""
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcrm1000.tfm" 1725636389.59708 2960 f0c6256b0c39b0be6de2ebf511a6400a ""
-  "/home/si1og/Dev/latex-spbtu/start.tex" 1725732370.66872 2940 50075efafd7b1e12c0a8fbe77166ce66 ""
+  "/home/si1og/Dev/latex-spbtu/start.tex" 1725739539.18468 2626 f3002f148f856d37efafbc3b19d31bab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2c.enc" 1136849721 3775 79602409bef561110aab4f2e34b6f00e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -70,8 +70,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725389922.81171 4547823 614eba97e0451aad345770236b030e55 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725389675 7761982 78543f127c9083d9420e0df447237558 ""
-  "start.aux" 1725732371.16372 132 4a260024c72d45b6eba469fdd16bf7b8 "pdflatex"
-  "start.tex" 1725732370.66872 2940 50075efafd7b1e12c0a8fbe77166ce66 ""
+  "start.aux" 1725739540.13968 132 4a260024c72d45b6eba469fdd16bf7b8 "pdflatex"
+  "start.tex" 1725739539.18468 2626 f3002f148f856d37efafbc3b19d31bab ""
   (generated)
   "start.aux"
   "start.log"

@@ -18,7 +18,9 @@
 \usepackage{longtable}
 
 % Global vars
-\newcommand\formulaGap{9cm}
+\newcommand\formulaGap{9.3cm}
+\newcommand\reWidth{3cm}
+\newcommand\rightCeilWidth{3.7cm}
 
 \title{Степени тригонометрических функций и линейных функций}
 \author{Илья Семенов}
@@ -42,35 +44,42 @@
 		\begin{tabular}{C{.8\textwidth} R{.2\textwidth}}
 			\vbox{
 				\[
-					\int_{0}^{\pi} xcos(2m+1)x \,dx = 0
+					\int_{0}^{\pi} x\cos(2m+1)x \,dx = 0
 				\]
 			} & ГХ2 (332)(12a)
 		\end{tabular}
 		\item [8.]
 		\begin{tabular}{C{\formulaGap} l r}
 			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi} sin^{v-1}xcosax \,dx = \frac{\pi cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{v+a+1}{2},\dfrac{v-a+1}{2}\right)}
+				\int_{0}^{\pi} \sin^{v-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)}
 			\]}} \\
 			 & [$Re\enspace\nu > 0$] & Лб V 121(68)и, Вт 337и
 		\end{tabular}
 		\item [9.]
 		\begin{tabular}{C{\formulaGap} l r}
 			\multicolumn{3}{c}{\vbox{\[
-				\int_{0}^{\pi/2} sin^{v-1}xcosax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{v+a+1}{2},\dfrac{v-a+1}{2}\right)}
+				\int_{0}^{\pi/2} \sin^{v-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)}
 			\]}} \\
 			 & [$Re\enspace\nu > 0$] & ГХ2 (332)(9c)
 		\end{tabular}
 		\item [10.]
-		\begin{tabular}{C{\formulaGap} m{3cm} R{4cm}}
-			\vbox{\[
-				\int_{0}^{\pi/2} sin^{\nu-2}xcos\nu x \,dx = \frac{1}{\nu-1}sin\frac{\nu\pi}{2}
-			\]} & [$Re\enspace\nu > 1$] & Х2 (332)(9c)
+		\begin{tabular}{C{\formulaGap} m{\reWidth} R{\rightCeilWidth}}
+			\[
+				\int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2}
+			\] & [$Re\enspace\nu > 1$] & Х2 (332)(9c)
 		\end{tabular}
 		\item [11.]
-		\begin{tabular}{C{\formulaGap} m{3cm} R{4cm}}
-			\vbox{\[
-				\int_{0}^{\pi} sin^{\nu}xcos\nu x \,dx = \frac{\pi}{2^{\nu}}cos\frac{\nu\pi}{2}
-			\]} & [$Re\enspace\nu > -1$] & Лб V 121(70)и
+		\begin{tabular}{C{\formulaGap} m{\reWidth} R{\rightCeilWidth}}
+			\[\int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2}\] 
+			& 
+			[$Re\enspace\nu > -1$] & Лб V 121(70)и
+		\end{tabular}
+		\item [12.]
+		\begin{tabular}{m{4cm} | m{10cm} | R{4cm}}
+			\[\int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx\]
+			&
+			\[= 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\]
+			& d \\
 		\end{tabular}
 	\end{itemize}
 \end{document}

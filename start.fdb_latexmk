@@ -1,10 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1725794638.87573 "/home/si1og/Dev/latex-spbtu/start.tex" "start.pdf" "start" 1725794639.28722 0
+["pdflatex"] 1725794970.72766 "/home/si1og/Dev/latex-spbtu/start.tex" "start.pdf" "start" 1725794971.1462 0
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcbx1000.tfm" 1725636391.9071 3016 58decb41c34d8eccd5781d6a12bdb44f ""
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcrm0500.tfm" 1725731705.62401 2980 55179092e10c1240725e42d822e792b6 ""
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcrm0700.tfm" 1725731703.35201 2984 4a7374ea67dee8f239d82c7c62389144 ""
   "/home/si1og/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2c/lcrm1000.tfm" 1725636389.59708 2960 f0c6256b0c39b0be6de2ebf511a6400a ""
-  "/home/si1og/Dev/latex-spbtu/start.tex" 1725794638.68641 4316 3020d58791925761e4e84387f09bd023 ""
+  "/home/si1og/Dev/latex-spbtu/start.tex" 1725794970.54018 4315 244294aa56bf2e4744083a9240bcb525 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2c.enc" 1136849721 3775 79602409bef561110aab4f2e34b6f00e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -72,8 +72,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725389922.81171 4547823 614eba97e0451aad345770236b030e55 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725389675 7761982 78543f127c9083d9420e0df447237558 ""
-  "start.aux" 1725794639.18941 132 4a260024c72d45b6eba469fdd16bf7b8 "pdflatex"
-  "start.tex" 1725794638.68641 4316 3020d58791925761e4e84387f09bd023 ""
+  "start.aux" 1725794971.04319 132 4a260024c72d45b6eba469fdd16bf7b8 "pdflatex"
+  "start.tex" 1725794970.54018 4315 244294aa56bf2e4744083a9240bcb525 ""
   (generated)
   "start.aux"
   "start.log"

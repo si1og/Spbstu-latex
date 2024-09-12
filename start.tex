@@ -1,29 +1,29 @@
+%!TEX program = lualatex
 \documentclass[10pt,fleqn]{article}
-\usepackage[textwidth=18cm, textheight=24cm]{geometry}
+\usepackage[top=2cm, left=2cm, right=2cm]{geometry}
 
 \usepackage{graphicx}
 
 % \usepackage[condensed,math]{iwona}
 \usepackage[russian,english]{babel}
 \usepackage[T2C]{fontenc}
-% \usepackage{uarial}
-% \renewcommand{\familydefault}{\sfdefault}
-% \usepackage{blindtext}
+
+% \usepackage{cmbright}
+% \usepackage{unicode-math}
+% \usepackage{polyglossia}
+
+\usepackage[no-math,no-config]{fontspec}
+\setmainfont{calibri.ttf}
 
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{amsmath}
-\usepackage{enumitem}
-\usepackage{longtable}
+
+% \setdefaultlanguage{russian}
 
 % For russian controls
 \usepackage{amssymb}
-
-% Global vars
-\newcommand\formulaGap{9.3cm}
-\newcommand\reWidth{3cm}
-\newcommand\rightCeilWidth{3.7cm}
 
 \title{Степени тригонометрических функций и линейных функций}
 \author{Илья Семенов}
@@ -47,6 +47,12 @@
 \renewcommand{\leq}{\leqslant}
 \renewcommand{\geq}{\geqslant}
 
+% Remove space around align
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
 \begin{document}
 	\begin{tabularx}{\textwidth}{m{.1\textwidth} C{.8\textwidth} R{.1\textwidth}}
 		3.631 & \@title & \textbf{401} \\ 
@@ -56,33 +62,59 @@
 
 	
 	\begin{align*}
-		7. \qquad \int_{0}^{\pi} x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
+		\makebox[0pt]{$7.$}  \qquad \quad \int_{0}^{\pi} x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
 	\end{align*}
 	
 	\begin{align*}
-		8. \qquad \int_{0}^{\pi} \sin^{v-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
+		\makebox[0pt]{$8.$} \qquad \quad \int_{0}^{\pi} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
 		& [Re\enspace\nu > 0] \tag*{Лб V 121(68)и, Вт 337и}
 	\end{align*}
 	\begin{align*}
-		9. \qquad \int_{0}^{\pi/2} \sin^{v-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
+		\makebox[0pt]{$9.$} \qquad \quad \int_{0}^{\pi/2} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
 		& [Re\enspace\nu > 0] \tag*{ГХ2 (332)(9c)}
 	\end{align*}
 	\begin{align*}
-		10. \qquad \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
-		& [Re\enspace\nu > 1] \hspace{1.3cm} \tag*{Х2 (332)(9c)}
+		\makebox[0pt]{$10.$} \qquad \quad \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
+		& [Re\enspace\nu > 1] \hspace{1cm} \tag*{Х2 (332)(9c)}
 	\end{align*}
 	\begin{align*}
-		11. \qquad \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
-		\hspace{.3cm} & [Re\enspace\nu > -1] \tag*{Лб V 121(70)и}
+		\makebox[0pt]{$11.$} \qquad \quad \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
+		\hspace{.7cm} & [Re\enspace\nu > -1] \tag*{Лб V 121(70)и}
 	\end{align*}
 	\begin{align*}
-		12. \qquad \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx & = 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
+		\makebox[0pt]{$12.$} \qquad \quad \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx & = 2\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
 			2n \\
 			n-m
 		\end{pmatrix} \pi & [n \geq m] \hspace{2.1cm} \\
-		& = 0 & [n < m] \hspace{2.1cm}
+		& = 0 & [n < m] \hspace{2.1cm} \\
+		\tag*{Би (40)(16), ГХ2 (332)(12b)}
 	\end{align*}
-	\begin{flushright}
-		Би (40)(16), ГХ2 (332)(12b)
-	\end{flushright}
+	\begin{align*}
+		\makebox[0pt]{$13.^{7}$} \qquad \quad \int_{0}^{\pi} \sin^{2n+1}x&\cos2mx \,dx = \\
+		& \hspace{.2cm} = 2\int_{0}^{\pi/2} \sin^{2n+1}x\cos2mx \,dx = \frac{(-1)^{m}2^{n+1}n!(2n+1)!!}{(2m-2n-3)!!(2m+2n+1)!!} \hspace{.9cm} & [n \leq m - 1] \\
+		& \hspace{.2cm} = \frac{(-1)^{n+1}2^{n+1}n!(2m-2n+3)!!(2n+1)!!}{(2m+2n+1)!!} \hspace{.9cm} & [n < m - 1] \\
+		\tag*{ГХ2 (332)(12c)}
+	\end{align*}
+	\begin{align*}
+		& \makebox[0pt]{$14.$} \qquad \quad \int_{0}^{\pi/2} \cos^{\nu-2}x\sin\nu x \,dx = \frac{1}{\nu - 1} \hspace{2.3cm} & [Re \enspace\nu > 1] \tag*{ГХ2 (332)(16с), Фх II 152}
+	\end{align*}
+	\begin{align*}
+		\makebox[0pt]{$15.$} \qquad \quad \int_{0}^{\pi} \cos^{m}\sin nx \,dx & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
+		& = [1 - (-1)^{m+n}]\Biggl\{\sum_{k=0}^{r-1} \frac{m!}{(m-k)!}\frac{(m+n-2k-2)!!}{(m+n)!!} + s\frac{m!(n - m - 2)!!}{(m + n)!!}\Biggr\} \\
+	\end{align*}
+	\vspace{-1.3cm}
+	\begin{align*}
+		& \qquad \quad \hspace{1cm} \left[\ r = \begin{cases}
+			m, & \text{если $m \leq n$} \\
+			n, & \text{если $m \geq n$}
+		\end{cases}, \quad s = 
+		\begin{cases}
+			2, & \text{если $n - m = 4l + 2 > 0$} \\
+			1, & \text{если $n - m = 2l + 1 > 0$} \\
+			0, & \text{если $n - m = 4l$ или $n - m < 0$}
+		\end{cases}\right]\ \tag*{ГХ2 (332)(13a)}
+	\end{align*}
+	\begin{align*}
+		\makebox[0pt]{$16.$} \qquad \quad \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
+	\end{align*}
 \end{document}

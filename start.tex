@@ -30,7 +30,7 @@
 
 \pagenumbering{gobble}
 
-\newcommand{\verticalGap}{-.78cm}
+\newcommand{\verticalGap}{-24pt}
 
 % Makes possible using vars
 \makeatletter
@@ -60,40 +60,40 @@
 
 \begin{document}
 	\begin{tabularx}{16cm}{m{1.6cm} C{12.8cm} R{1.6cm}}
-		3.631 & \@title & \textbf{401} \\ 
-		\hline
-		\hline
+		3.631 & \@title & \textbf{401}\\[-7pt]
+		\rule{16cm}{.5pt}\\[-9pt]
+		\rule{16cm}{.5pt}\\
 	\end{tabularx}
-	\vspace{.3cm}
+	\vspace{4pt}
 	\begin{align*}
-		\hspace{-.1cm} \makebox[0pt][l]{$7.$} \hspace{.1cm} \hspace{.87cm} \int_{0}^{\pi} \sin^{n}x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
+		\hspace{-5pt} \makebox[0pt][l]{$7.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{n}x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
 	\end{align*}
 	\vspace{\verticalGap}
 	\vspace{.2cm}
 	\begin{align*}
-		\hspace{-.1cm} \makebox[0pt][l]{$8.$} \hspace{.1cm} \hspace{.89cm} \int_{0}^{\pi} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
-		& \hspace{-.2cm} [Re\enspace\nu > 0] \tag*{Лб V 121(68)и, Вт 337и}
+		\hspace{-5pt} \makebox[0pt][l]{$8.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\[1pt]
+		& \hspace{-6pt} [Re\,\nu > 0] \tag*{Лб V 121(68)и, Вт 337и}
 	\end{align*}
 	\vspace{\verticalGap}
 	\begin{align*}
-		\hspace{-.07cm} \makebox[0pt][l]{$9.$} \hspace{.99cm} \int_{0}^{\pi/2} \cos^{\nu-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
-		& \hspace{-.2cm} [Re\enspace\nu > 0] \tag*{ГХ2 (332)(9c)}
+		\hspace{-5pt} \makebox[0pt][l]{$9.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{\nu-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
+		& \hspace{-.2cm} [Re\,\nu > 0] \tag*{ГХ2 (332)(9c)}
 	\end{align*}
 	\vspace{\verticalGap}
 	\begin{align*}
-		\hspace{-.03cm} \makebox[0pt][l]{$10.$} \hspace{1.02cm} \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
-		& \hspace{-1.05cm} [Re\enspace\nu > 1] \hspace{1.05cm} \tag*{Х2 (332)(9c)}
-	\end{align*}
-	\vspace{\verticalGap}
-	\vspace{.15cm}
-	\begin{align*}
-		\hspace{-.01cm} \makebox[0pt][l]{$11.$} \hspace{1cm} \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
-		\hspace{1.3cm} & [Re\enspace\nu > -1] \tag*{Лб V 121(70)и}
+		\hspace{-5pt} \makebox[0pt][l]{$10.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
+		& \hspace{-5pt} [Re\,\nu > 1] \hspace{5pt} \tag*{Х2 (332)(9c)}
 	\end{align*}
 	\vspace{\verticalGap}
 	\vspace{.15cm}
 	\begin{align*}
-		\hspace{.02cm} \makebox[0pt][l]{$12.$} \hspace{1cm} \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx \hspace{-.05cm} & = \hspace{-.03cm} 2 \hspace{-.06cm}\int_{0}^{\pi/2} \sin^{2n}x\hspace{-.05cm}\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
+		\hspace{-5pt} \makebox[0pt][l]{$11.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
+		\hspace{1.3cm} & [Re\,\nu > -1] \tag*{Лб V 121(70)и}
+	\end{align*}
+	\vspace{\verticalGap}
+	\vspace{.15cm}
+	\begin{align*}
+		\hspace{-5pt} \makebox[0pt][l]{$12.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx \hspace{-.05cm} & = \hspace{-.03cm} 2 \hspace{-.06cm}\int_{0}^{\pi/2} \sin^{2n}x\hspace{-.05cm}\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
 			2n \\
 			n-m
 		\end{pmatrix} \pi & [n \geq m] \hspace{2.1cm} \\[.02cm]
@@ -103,7 +103,7 @@
 	\vspace{\verticalGap}
 	\vspace{.05cm}
 	\begin{align*}
-		\hspace{.03cm} \makebox[0pt][l]{$13.^{7}$} \hspace{1cm} \int_{0}^{\pi} \sin^{2n+1}x&\cos2mx \,dx = \\[-.15cm]
+		\hspace{-5pt} \makebox[0pt][l]{$13.^{7}$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{2n+1}x&\cos2mx \,dx = \\[-.15cm]
 		& \hspace{.15cm} = 2\int_{0}^{\pi/2} \sin^{2n+1}x\cos2mx \,dx = \frac{(-1)^{m}2^{n+1}n!(2n+1)!!}{(2m-2n-3)!!(2m+2n+1)!!} \hspace{.9cm} & [n \leq m - 1] \\[-.15cm]
 		& \hspace{.15cm} = \frac{(-1)^{n+1}2^{n+1}n!(2m-2n+3)!!(2n+1)!!}{(2m+2n+1)!!} \hspace{.9cm} & [n < m - 1] \\
 		\tag*{ГХ2 (332)(12c)}
@@ -111,12 +111,12 @@
 	\vspace{\verticalGap}
 	\vspace{-.1cm}
 	\begin{align*}
-		& \hspace{.03cm} \makebox[0pt][l]{$14.$} \hspace{1cm} \int_{0}^{\pi/2} \cos^{\nu-2}x\sin\nu x \,dx = \frac{1}{\nu - 1} \hspace{2.3cm} & [Re \enspace\nu > 1] \tag*{ГХ2 (332)(16с), Фх II 152}
+		& \hspace{-5pt} \makebox[0pt][l]{$14.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{\nu-2}x\sin\nu x \,dx = \frac{1}{\nu - 1} \hspace{2.3cm} & [Re \enspace\nu > 1] \tag*{ГХ2 (332)(16с), Фх II 152}
 	\end{align*}
 	\vspace{\verticalGap}
 	\vspace{.1cm}
 	\begin{align*}
-		\hspace{.03cm} \makebox[0pt][l]{$15.$} \hspace{1cm} \int_{0}^{\pi} \cos^{m}\sin nx \,dx & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
+		\hspace{-5pt} \makebox[0pt][l]{$15.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \cos^{m}\sin nx \,dx & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
 		& = [1 - (-1)^{m+n}]\Biggl\{\sum_{k=0}^{r-1} \frac{m!}{(m-k)!}\frac{(m+n-2k-2)!!}{(m+n)!!} + s\frac{m!(n - m - 2)!!}{(m + n)!!}\Biggr\} \\
 	\end{align*}
 	\vspace{-1.3cm}
@@ -133,6 +133,6 @@
 	\end{align*}
 	\vspace{\verticalGap}
 	\begin{align*}
-		\hspace{-.1cm} \makebox[0pt][l]{$16.$} \hspace{.1cm} \qquad \; \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
+		\hspace{-5pt} \makebox[0pt][l]{$16.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
 	\end{align*}
 \end{document}

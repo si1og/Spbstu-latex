@@ -19,6 +19,7 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{amsmath}
+\usepackage{relsize}
 
 % \setdefaultlanguage{russian}
 
@@ -60,66 +61,62 @@
 
 \begin{document}
 	\begin{tabularx}{16cm}{m{1.6cm} C{12.8cm} R{1.6cm}}
-		3.631 & \@title & \textbf{401}\\[-7pt]
-		\rule{16cm}{.5pt}\\[-9pt]
-		\rule{16cm}{.5pt}\\
+		\relscale{.96}3.631 & \relscale{.96}\@title & \relscale{.96}\textbf{401}\\[-7pt]
+		\rule{16cm}{.6pt}\\[-9pt]
+		\rule{16cm}{.6pt}\\
 	\end{tabularx}
 	\vspace{4pt}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$7.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{n}x\cos(2m+1)x \,dx = 0 \tag*{ ГХ2 (332)(12a)}
+		\hspace{-5pt} \makebox[0pt][l]{$7.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \sin^{n}x\cos(2m+1)x \,dx = 0 \tag*{ГХ2 (332)(12a) \hspace{-.5pt}}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{.2cm}
+	\vspace{6pt}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$8.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\[1pt]
-		& \hspace{-6pt} [Re\,\nu > 0] \tag*{Лб V 121(68)и, Вт 337и}
-	\end{align*}
-	\vspace{\verticalGap}
-	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$9.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{\nu-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu B\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\
-		& \hspace{-.2cm} [Re\,\nu > 0] \tag*{ГХ2 (332)(9c)}
+		\hspace{-5pt} \makebox[0pt][l]{$8.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \sin^{\nu-1}x\cos ax \,dx = \frac{\pi \cos\frac{a \pi}{2}}{2^{\nu-1}\nu\,\mathrm{B}\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\[1.1pt]
+		& \hspace{-6pt} [\mathrm{Re}\,\nu > 0] \tag*{Лб V 121(68)и, Вт 337и \hspace{-.5pt}}
 	\end{align*}
 	\vspace{\verticalGap}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$10.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
-		& \hspace{-5pt} [Re\,\nu > 1] \hspace{5pt} \tag*{Х2 (332)(9c)}
+		\hspace{-5pt} \makebox[0pt][l]{$9.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \cos^{\nu-1}x\cos ax \,dx = \frac{\pi}{2^{\nu}\nu\,\mathrm{B}\left(\dfrac{\nu+a+1}{2},\dfrac{\nu-a+1}{2}\right)} & \\[1.1pt]
+		& \hspace{-5pt} [\mathrm{Re}\,\nu > 0] \tag*{ГХ2 (332)(9c) \hspace{-.5pt}}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{.15cm}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$11.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
-		\hspace{1.3cm} & [Re\,\nu > -1] \tag*{Лб V 121(70)и}
+		\hspace{-5pt} \makebox[0pt][l]{$10.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \sin^{\nu-2}x\cos\nu x \,dx = \frac{1}{\nu-1}\sin\frac{\nu\pi}{2} &
+		& \hspace{43pt} [\mathrm{Re}\,\nu > 1] \tag*{ГХ2 (332)(16b), Фх II 15 2\hspace{2pt}}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{.15cm}
+	\vspace{6pt}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$12.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx \hspace{-.05cm} & = \hspace{-.03cm} 2 \hspace{-.06cm}\int_{0}^{\pi/2} \sin^{2n}x\hspace{-.05cm}\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\begin{pmatrix}
+		\hspace{-5pt} \makebox[0pt][l]{$11.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \sin^{\nu}x\cos\nu x \,dx = \frac{\pi}{2^{\nu}}\cos\frac{\nu\pi}{2} &
+		\hspace{1.3cm} & [\mathrm{Re}\,\nu > -1] \tag*{Лб V 121(70)и \hspace{-.5pt}}
+	\end{align*}
+	\vspace{\verticalGap}
+	\vspace{6pt}
+	\begin{align*}
+		\hspace{-5pt} \makebox[0pt][l]{$12.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \sin^{2n}x\cos2mx \,dx \hspace{-1pt} & = 2\hspace{-1.5pt}\int_{0}^{\pi/2} \sin^{2n}x\cos2mx \,dx = \frac{(-1)^{m}}{2^{2n}}\hspace{-2pt}\begin{pmatrix}
 			2n \\
 			n-m
-		\end{pmatrix} \pi & [n \geq m] \hspace{2.1cm} \\[.02cm]
-		& = 0 & [n < m] \hspace{2.1cm} \\
-		\tag*{Би (40)(16), ГХ2 (332)(12b)}
+		\end{pmatrix} \pi & [n \geq m] \hspace{48pt} \\[2pt]
+		& = 0 & [n < m] \hspace{48pt} \\[2pt]
+		\tag*{Би (40)(16), ГХ2 (332)(12b) \hspace{-.5pt}}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{.05cm}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$13.^{7}$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \sin^{2n+1}x&\cos2mx \,dx = \\[-.15cm]
+		\hspace{-5pt} \makebox[0pt][l]{$13.^{7}$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \sin^{2n+1}x&\cos2mx \,dx = \\[-.15cm]
 		& \hspace{.15cm} = 2\int_{0}^{\pi/2} \sin^{2n+1}x\cos2mx \,dx = \frac{(-1)^{m}2^{n+1}n!(2n+1)!!}{(2m-2n-3)!!(2m+2n+1)!!} \hspace{.9cm} & [n \leq m - 1] \\[-.15cm]
 		& \hspace{.15cm} = \frac{(-1)^{n+1}2^{n+1}n!(2m-2n+3)!!(2n+1)!!}{(2m+2n+1)!!} \hspace{.9cm} & [n < m - 1] \\
-		\tag*{ГХ2 (332)(12c)}
+		\tag*{ГХ2 (332)(12c) \hspace{-.5pt}}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{-.1cm}
 	\begin{align*}
-		& \hspace{-5pt} \makebox[0pt][l]{$14.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{\nu-2}x\sin\nu x \,dx = \frac{1}{\nu - 1} \hspace{2.3cm} & [Re \enspace\nu > 1] \tag*{ГХ2 (332)(16с), Фх II 152}
+		& \hspace{-5pt} \makebox[0pt][l]{$14.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \cos^{\nu-2}x\sin\nu x \,dx = \frac{1}{\nu - 1} \hspace{2.3cm} & [\mathrm{Re}\,\nu > 1] \tag*{ГХ2 (332)(16с), Фх II 152}
 	\end{align*}
 	\vspace{\verticalGap}
-	\vspace{.1cm}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$15.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi} \cos^{m}\sin nx \,dx & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
+		\hspace{-5pt} \makebox[0pt][l]{$15.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \cos^{m}\sin nx \,dx & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
 		& = [1 - (-1)^{m+n}]\Biggl\{\sum_{k=0}^{r-1} \frac{m!}{(m-k)!}\frac{(m+n-2k-2)!!}{(m+n)!!} + s\frac{m!(n - m - 2)!!}{(m + n)!!}\Biggr\} \\
 	\end{align*}
-	\vspace{-1.3cm}
 	\begin{align*}
 		& \qquad \; \hspace{1cm} \left[\ r = \begin{cases}
 			m, & \text{если $m \leq n$} \\
@@ -133,6 +130,6 @@
 	\end{align*}
 	\vspace{\verticalGap}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$16.$} \hspace{5pt} \hspace{24pt} \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
+		\hspace{-5pt} \makebox[0pt][l]{$16.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
 	\end{align*}
 \end{document}

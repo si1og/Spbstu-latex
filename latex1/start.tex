@@ -15,7 +15,6 @@
 \usepackage[no-math,no-config]{fontspec}
 \setmainfont{calibri.ttf}
 
-\usepackage{array}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{amsmath}
@@ -61,7 +60,7 @@
 
 \begin{document}
 	\begin{tabularx}{16cm}{m{1.6cm} C{12.8cm} R{1.6cm}}
-		\relscale{.96}3.631 & \relscale{.96}\@title & \relscale{.96}\textbf{401}\\[-7pt]
+		\relscale{.93}3.631 & \relscale{.93}\@title & \relscale{.93}\textbf{401}\\[-7pt]
 		\rule{16cm}{.6pt}\\[-9pt]
 		\rule{16cm}{.6pt}\\
 	\end{tabularx}
@@ -117,14 +116,16 @@
 	\vspace{\verticalGap}
 	\vspace{6pt}
 	\begin{align*}
-		\hspace{-6pt} \makebox[0pt][l]{$15.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \cos^{m}x\sin nx \,dx \hspace{-1pt} & = [1-(-1)^{m+n}] \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\
-		& = [1 - (-1)^{m+n}]\Biggl\{\sum_{k=0}^{r-1} \frac{m!}{(m-k)!}\frac{(m+n-2k-2)!!}{(m+n)!!} + s\frac{m!(n - m - 2)!!}{(m + n)!!}\Biggr\} \\
+		\hspace{-6pt} \makebox[0pt][l]{$15.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi} \cos^{m}x\sin nx \,dx \hspace{-1pt} & = [1-(-1)^{m+n}] \hspace{2pt} \int_{0}^{\pi/2} \cos^{m}x\sin nx \,dx = \\[-2pt]
+		& = [1 - (-1)^{m+n}]\hspace{5pt}\Biggl\{\sum_{k=0}^{r-1} \frac{m!}{(m-k)!}\frac{(m+n-2k-2)!!}{(m+n)!!} + s\frac{m!(n - m - 2)!!}{(m + n)!!}\Biggr\} \\[-5pt]
 	\end{align*}
+	\vspace{\verticalGap}
+	\vspace{-16pt}
 	\begin{align*}
-		& \qquad \; \hspace{1cm} \left[\ r = \begin{cases}
+		& \vspace{-2pt} \qquad \; \hspace{1cm} \hspace{3pt} \left[\ \hspace{-2pt}r = \begin{cases}
 			m, & \text{если $m \leq n$} \\
 			n, & \text{если $m \geq n$}
-		\end{cases}, \quad s = 
+		\end{cases}, \hspace{12pt} s = 
 		\begin{cases}
 			2, & \text{если $n - m = 4l + 2 > 0$} \\
 			1, & \text{если $n - m = 2l + 1 > 0$} \\
@@ -132,7 +133,8 @@
 		\end{cases}\right]\ \tag*{ГХ2 (332)(13a)}
 	\end{align*}
 	\vspace{\verticalGap}
+	\vspace{8pt}
 	\begin{align*}
-		\hspace{-5pt} \makebox[0pt][l]{$16.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
+		\hspace{-6pt} \makebox[0pt][l]{$16.$} \hspace{5pt} \hspace{23.5pt} \int_{0}^{\pi/2} \cos^{n}x\sin nx \,dx = \frac{1}{2^{n+1}}\sum_{k=1}^{n}\frac{2^{k}}{k} \tag*{Фх II 153}
 	\end{align*}
 \end{document}

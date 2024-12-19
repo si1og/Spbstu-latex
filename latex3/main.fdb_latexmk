@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1734556238.22982 "d:/Latex/Spbstu-latex/latex3/main.tex" "main.pdf" "main" 1734556251.92814 0
+["pdflatex"] 1734562842.41533 "d:/Latex/Spbstu-latex/latex3/main.tex" "main.pdf" "main" 1734562858.15982 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1440.tfm" 993062510 1460 05250f74aea2bdcfe9d6766811b8b7b2 ""
@@ -211,12 +211,12 @@
   "C:/Users/Ilya Semenov/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/latt1200.tfm" 1734245659 1272 bf3bb5cc29880b269c8bcb412a1ac6e2 ""
   "C:/Users/Ilya Semenov/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/latt1440.tfm" 1734245654 1272 e3abe42d6bdbd8626fffa22fcb43f669 ""
   "C:/Users/Ilya Semenov/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1734245410 24215255 7a4d516d501b1e0cabe491c552638e11 ""
-  "d:/Latex/Spbstu-latex/latex3/main.tex" 1734556222 62161 e0104b309bdd228917b787d16bf47a29 ""
+  "d:/Latex/Spbstu-latex/latex3/main.tex" 1734562840 62143 f1da150367abc81f0c62df77a942af9f ""
   "img/rastr-pic.png" 1734244703 127752 db034ba420e21aa560540b4288c02968 ""
-  "main.aux" 1734556251 5392 0983aa39928ecfa9afe8e1e3abdcd547 "pdflatex"
-  "main.out" 1734556251 5917 4046e933bc45ba4c3285a8be4ca9399d "pdflatex"
-  "main.tex" 1734556222 62161 e0104b309bdd228917b787d16bf47a29 ""
-  "main.toc" 1734556251 2367 a8b842f2c994353b924a10f140cdf90b "pdflatex"
+  "main.aux" 1734562857 5362 e6fe1ca7a0bb3f5d41c9d4aa41c29de3 "pdflatex"
+  "main.out" 1734562857 5787 50b6c4009eca6a55f5fc23cdcef36316 "pdflatex"
+  "main.tex" 1734562840 62143 f1da150367abc81f0c62df77a942af9f ""
+  "main.toc" 1734562857 2337 22f57af44070a5e8758d8f1f3f14fd0e "pdflatex"
   (generated)
   "main.aux"
   "main.log"
